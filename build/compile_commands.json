@@ -1,0 +1,8 @@
+[
+{
+  "directory": "D:/C++/tiaobiao/build",
+  "command": "C:\\Users\\lwx\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\tiaobiao.dir\\main.cpp.obj -c D:\\C++\\tiaobiao\\main.cpp",
+  "file": "D:/C++/tiaobiao/main.cpp",
+  "output": "CMakeFiles/tiaobiao.dir/main.cpp.obj"
+}
+]
