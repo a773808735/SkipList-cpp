@@ -2,10 +2,13 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "tiaobiao.exe"
+			"path" : "libMyLibrary.dll"
 		},
 		{
-			"path" : "tiaobiao.pdb"
+			"path" : "libMyLibrary.dll.a"
+		},
+		{
+			"path" : "libMyLibrary.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -13,7 +16,9 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_library",
+			"include_directories",
+			"target_include_directories"
 		],
 		"files" : 
 		[
@@ -29,6 +34,18 @@
 				"file" : 0,
 				"line" : 7,
 				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 8,
+				"parent" : 0
 			}
 		]
 	},
@@ -41,6 +58,23 @@
 					"fragment" : "-g"
 				}
 			],
+			"defines" : 
+			[
+				{
+					"define" : "MyLibrary_EXPORTS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 2,
+					"path" : "D:/C++/tiaobiao/./include"
+				},
+				{
+					"backtrace" : 3,
+					"path" : "D:/C++/tiaobiao"
+				}
+			],
 			"language" : "CXX",
 			"sourceIndexes" : 
 			[
@@ -48,15 +82,11 @@
 			]
 		}
 	],
-	"id" : "tiaobiao::@6890427a1f51a3e7e1df",
+	"id" : "MyLibrary::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -68,8 +98,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "tiaobiao",
-	"nameOnDisk" : "tiaobiao.exe",
+	"name" : "MyLibrary",
+	"nameOnDisk" : "libMyLibrary.dll",
 	"paths" : 
 	{
 		"build" : ".",
@@ -90,9 +120,9 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "skiplist.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "SHARED_LIBRARY"
 }

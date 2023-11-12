@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "D:/C++/tiaobiao/main.cpp" "CMakeFiles/tiaobiao.dir/main.cpp.obj" "gcc" "CMakeFiles/tiaobiao.dir/main.cpp.obj.d"
+  "D:/C++/tiaobiao/main.cpp" "CMakeFiles/skiplist.dir/main.cpp.obj" "gcc" "CMakeFiles/skiplist.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

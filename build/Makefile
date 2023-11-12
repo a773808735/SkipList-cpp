@@ -510,24 +510,37 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named tiaobiao
+# Target rules for targets named MyLibrary
 
 # Build rule for target.
-tiaobiao: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 tiaobiao
-.PHONY : tiaobiao
+MyLibrary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MyLibrary
+.PHONY : MyLibrary
 
 # fast build rule for target.
-tiaobiao/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tiaobiao.dir\build.make CMakeFiles/tiaobiao.dir/build
-.PHONY : tiaobiao/fast
+MyLibrary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyLibrary.dir\build.make CMakeFiles/MyLibrary.dir/build
+.PHONY : MyLibrary/fast
+
+#=============================================================================
+# Target rules for targets named skiplist
+
+# Build rule for target.
+skiplist: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 skiplist
+.PHONY : skiplist
+
+# fast build rule for target.
+skiplist/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\skiplist.dir\build.make CMakeFiles/skiplist.dir/build
+.PHONY : skiplist/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tiaobiao.dir\build.make CMakeFiles/tiaobiao.dir/main.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\skiplist.dir\build.make CMakeFiles/skiplist.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -535,7 +548,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tiaobiao.dir\build.make CMakeFiles/tiaobiao.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\skiplist.dir\build.make CMakeFiles/skiplist.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -543,8 +556,32 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\tiaobiao.dir\build.make CMakeFiles/tiaobiao.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\skiplist.dir\build.make CMakeFiles/skiplist.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+skiplist.obj: skiplist.cpp.obj
+.PHONY : skiplist.obj
+
+# target to build an object file
+skiplist.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyLibrary.dir\build.make CMakeFiles/MyLibrary.dir/skiplist.cpp.obj
+.PHONY : skiplist.cpp.obj
+
+skiplist.i: skiplist.cpp.i
+.PHONY : skiplist.i
+
+# target to preprocess a source file
+skiplist.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyLibrary.dir\build.make CMakeFiles/MyLibrary.dir/skiplist.cpp.i
+.PHONY : skiplist.cpp.i
+
+skiplist.s: skiplist.cpp.s
+.PHONY : skiplist.s
+
+# target to generate assembly for a file
+skiplist.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MyLibrary.dir\build.make CMakeFiles/MyLibrary.dir/skiplist.cpp.s
+.PHONY : skiplist.cpp.s
 
 # Help Target
 help:
@@ -585,10 +622,14 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
-	@echo ... tiaobiao
+	@echo ... MyLibrary
+	@echo ... skiplist
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... skiplist.obj
+	@echo ... skiplist.i
+	@echo ... skiplist.s
 .PHONY : help
 
 

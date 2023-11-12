@@ -26,7 +26,8 @@ D:/C++/tiaobiao/build/CMakeFiles/ContinuousTest.dir
 D:/C++/tiaobiao/build/CMakeFiles/ContinuousCoverage.dir
 D:/C++/tiaobiao/build/CMakeFiles/ContinuousMemCheck.dir
 D:/C++/tiaobiao/build/CMakeFiles/ContinuousSubmit.dir
-D:/C++/tiaobiao/build/CMakeFiles/tiaobiao.dir
+D:/C++/tiaobiao/build/CMakeFiles/MyLibrary.dir
+D:/C++/tiaobiao/build/CMakeFiles/skiplist.dir
 D:/C++/tiaobiao/build/CMakeFiles/package.dir
 D:/C++/tiaobiao/build/CMakeFiles/package_source.dir
 D:/C++/tiaobiao/build/CMakeFiles/test.dir

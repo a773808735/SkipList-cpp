@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="Win32-mingw32-make"
-	BuildStamp="20231111-2042-Experimental"
+	BuildStamp="20231112-0026-Experimental"
 	Name="LAPTOP-QM6SBQNT"
 	Generator="ctest-3.28.0-rc1"
 	CompilerName="C:/Users/lwx/mingw64/bin/g++.exe"
@@ -24,11 +24,11 @@
 	ProcessorClockFrequency="2688"
 	>
 	<Testing>
-		<StartDateTime>Nov 11 15:42 东部标准时间</StartDateTime>
-		<StartTestTime>1699735326</StartTestTime>
+		<StartDateTime>Nov 11 19:26 东部标准时间</StartDateTime>
+		<StartTestTime>1699748807</StartTestTime>
 		<TestList/>
-		<EndDateTime>Nov 11 15:42 东部标准时间</EndDateTime>
-		<EndTestTime>1699735326</EndTestTime>
+		<EndDateTime>Nov 11 19:26 东部标准时间</EndDateTime>
+		<EndTestTime>1699748807</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>
