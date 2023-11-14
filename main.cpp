@@ -24,5 +24,6 @@ int main()
     skipList.delete_element(7);
     skipList.display_list();
     std::cout << "skipList size:" << skipList.size() << std::endl;
+    skipList.dump_file();
     return 0;
 }
